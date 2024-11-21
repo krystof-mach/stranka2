@@ -45,6 +45,6 @@ app.post("/upload", upload.single("file"), (_req, res) => {
     res.redirect("/");
 });
 
-app.listen(80, () => {
-    console.log(`Listening on port 80`);
+app.listen(10000, () => {
+    console.log(`Listening on port 10000`);
 })
