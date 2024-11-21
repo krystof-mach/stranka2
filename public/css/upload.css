@@ -11,3 +11,8 @@ form {
 input {
     font-size: 3rem;
 }
+upldBtn{
+    height: 5vh;
+    position:static;
+    top:10vh;
+}
