@@ -1,0 +1,126 @@
+
+img{
+opacity: 1;
+cursor:crosshair;
+border-radius: 1rem;
+margin: 5px;
+transition: .5s;
+height:30vh
+
+}
+img:hover {
+height: calc(30vh * 1.05);
+transition: .5s;
+border: black 20px;
+border-radius: 1.5rem;
+}
+body:hover{
+cursor:progress;
+}
+body{
+    background-color: rgb(2, 28, 28);
+}
+
+.main {
+    display:flex;
+    height: 100%;
+    overflow-x: auto;
+    flex-wrap:wrap;
+    margin-top: 40px;
+}
+
+body:hover{
+    cursor: progress;
+}
+
+.controlPanel{
+    background-color: rgb(2, 28, 28);
+    border-color: aqua;
+    border-width: 3px ;
+    border-style:solid;
+    top: 1vh;
+    right:1vw;
+    margin-bottom: 1rem;
+    height: 3.5vh;
+    border-radius: 1rem;
+    position: fixed;
+}
+.controlPanel2{
+    background-color: rgb(2, 28, 28);
+    border-color: aqua;
+    border-width: 3px ;
+    border-style:solid;
+    top: 1vh;
+    left:1vw;
+    margin-bottom: 1rem;    
+    height: 3.5vh;
+    border-radius: 1rem;
+    position: fixed;
+
+}
+.nadpis{
+    background-color: rgba(255, 16, 195, 0.867);
+    border-width:3px;
+    border-style:solid;
+    border-radius: 0.5rem;
+    position: fixed;
+    left:2vW;
+    right:2vW;
+    top:1vh;
+    height: 3.5vh;
+}
+.nadPis{
+    color: black;
+    position: relative;
+    float: right;
+    margin-right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left:-50%;
+    transition: .1s;
+    font-weight: bold;
+    font-size: 2.19vh;
+}
+.reloadBtn{
+    color: rgb(187, 202, 233);
+    position: relative;
+    float: right;
+    margin-right: 1rem;
+    top: 50%;
+    left:5.5%;
+    font-size: 2.19vh;
+    transform: translateY(-50%);
+    transition: .1s;
+    font-weight: bold;
+}
+
+.reloadBtn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .1s;
+    font-size: calc(2.19vh*1.006);
+}
+.igBtn{
+    color: rgb(187, 202, 233);
+    position: relative;
+    float: right;
+    margin-right: 1rem;
+    top: 50%;
+    left:11%;
+    font-size: 2.19vh;
+    transform: translateY(-50%);
+    transition: .1s;
+    font-weight: bold;
+}
+.igBtn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .1s;
+    font-size: calc(2.19vh*1.006);
+}
+
+@media (max-width: 768px) /* mobil */ {
+    .main {
+        display: block;
+    }
+}

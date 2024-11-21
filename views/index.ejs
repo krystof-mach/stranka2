@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nástěnka</title>
+    <link rel="stylesheet" href ="/css/main.css">
+  <style>  .myDiv {
+        border: 5px outset red;
+        background: url("sraci\ alex\ reklama.png");   
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 50vh;
+        width: 40vw;
+  }
+     </style>
+</head>
+<body>
+  <div class="nadpis">
+    <span class="nadPis">NÁSTĚNKA 2C z grafiky</span>
+  </div>
+  <div class="controlPanel">
+    <span class="reloadBtn">Nahrát fotku</span>
+  </div>
+ <div class="controlPanel2">
+    <span class="igBtn">NÁŠ IG</span>
+  </div>
+ 
+  <div class="main">
+    <% files.forEach(file => { %>
+        <img src="<%= file %>" onclick="window.location.href='<%= file %>'">
+    <% }) %>
+  </div>
+
+  <script>
+    const reloadBtn = document.querySelector("span.reloadBtn");
+
+    reloadBtn.addEventListener("click", () => {
+        window.location.href = "/upload";
+    }
+  );
+  const igBtn = document.querySelector("span.igBtn");
+  igBtn.addEventListener("click",()=>{
+      window.location.href = "https://www.instagram.com/krizovavyprava2.0/";
+  })
+  </script>
+
+  </body>
+</html>
