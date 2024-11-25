@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index",
-    "start": "node .",
-    "checkUploads": "node scripts/checkUploadFolder"
+    "dev": "node scripts/checkUploadFolder && nodemon index",
+    "start": "node scripts/checkUploadFolder && node ."
   },
   "keywords": [],
   "author": "",
